@@ -1,0 +1,41 @@
+<%- include('../../partials/_header.ejs') %>
+    <h1>Contact</h1>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique consectetur animi ratione magni voluptas blanditiis, maxime, cupiditate voluptate, necessitatibus fugit corrupti dolor vero nemo magnam doloribus recusandae voluptatem reiciendis ut!</p>
+    <form id="contact-form" method="POST" enctype="multipart/form-data">
+        <div>
+            <div class="input--container">
+                <label for="pseudo">pseudo*</label>
+                <input required type="text" name="pseudo">
+            </div>
+        </div>
+        <div>
+            <div class="input--container">
+                <label for="firstname">firstname</label>
+                <input type="text" name="firstname">
+            </div>
+            <div class="input--container">
+                <label for="lastname">lastname</label>
+                <input type="text" name="lastname">
+            </div>
+        </div>
+        <div>
+            <div class="input--container">
+                <label for="email">email*</label>
+                <input required type="email" name="email">
+            </div>
+            <div class="input--container">
+                <label for="myFile">file</label>
+                <input type="file" name="myFile">
+            </div>
+        </div>
+        <div>
+            <div class="input--container">
+                <label for="message">message*</label>
+                <textarea required name="message" id="message" cols="30" rows="10"></textarea>
+            </div>
+        </div>
+        <div>
+            <button type="submit">Send</button>
+        </div>
+    </form>
+<%- include('../../partials/_footer.ejs') %>

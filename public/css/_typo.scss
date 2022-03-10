@@ -1,0 +1,69 @@
+::selection {
+    background-color: black;
+    color: $first-color;
+}
+
+html {
+    font-family: "Poppins", sans-serif;
+}
+
+h1 {
+    font-size: 15rem;
+}
+h2 {
+    font-size: 5rem;
+}
+
+a {
+    color: black;
+    position: relative;
+    text-decoration: none;
+    &::before {
+        content: "";
+        position: absolute;
+        height: 5px;
+        background-color: rgba(0, 0, 0, 0.8);
+        bottom: 3px; left: 0; right: 100%;
+        transition: .3s;
+    }
+    &:hover::before {
+        right: 0;
+    }
+}
+
+input, textarea, button[type=submit] {
+    padding: 10px;
+    border: solid black 2px;
+    background: rgba(0, 0, 0, 0.05);
+    font-family: Arial, Helvetica, sans-serif;
+    outline: none;
+    resize: none;
+    min-height: 39px;
+}
+
+input[type=file] {
+    padding: 0;
+    &::-webkit-file-upload-button {
+        height: 100%;
+        background-color: black;
+        color: $first-color;
+        border: none;
+        padding: 0 20px;
+        margin-right: 10px;
+        cursor: pointer;
+        &:hover {
+            opacity: 0.8;
+        }
+    }
+}
+
+button {
+    cursor: pointer;
+    &:hover {
+        opacity: 0.8;
+    }
+    &[type=submit] {
+        background-color: black;
+        color: $first-color;
+    }
+}
