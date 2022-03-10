@@ -1,5 +1,17 @@
-{
-    "lastname": "Belford",
-    "firstname": "Henry",
-    "image": "images/test.jpg"
-}
+[
+    {
+        "lastname": "x",
+        "firstname": "Pierre",
+        "image": "images/pierre.jpg"
+    },
+    {
+        "lastname": "x",
+        "firstname": "Gui",
+        "image": "images/gui.jpg"
+    },
+    {
+        "lastname": "x",
+        "firstname": "momo",
+        "image": "images/momo.jpg"
+    }
+]
