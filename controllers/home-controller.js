@@ -1,9 +1,27 @@
+const jsonCompute = require('../utils/json-utils');
 const { contactFormValidator } = require('../validation/contact-form-validator');
 
 const homeController = {
-    index: (req, res) => {
+    index: async (req, res) => {
+        const data = await jsonCompute("data.json");
+        console.log(data);
         console.log('page', 'home');
-        res.render('home/index');
+        res.render('home/index', { data });
+    },
+    people: async (req, res) => {
+        console.log('page', 'people');
+        const id = req.params.id;
+        const data = await jsonCompute("data.json");
+        let member = null;
+        data.forEach(person => {
+            console.log(person);
+            if (person.id == id) {
+                member = person;
+            }
+
+        });
+        if (!member) return res.sendStatus(404);
+        res.render('people/index', { member });
     },
     about: (req, res) => {
         console.log('page', 'about');

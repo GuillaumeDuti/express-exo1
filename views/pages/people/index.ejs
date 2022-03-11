@@ -1,0 +1,9 @@
+<%- include('../../partials/_header.ejs') %>
+<div class="img--member img--container">
+    <img src="<%= member.image %>" alt="pic of <%= member.firstname %>">
+</div>
+    <h1><%= member.firstname %></h1>
+    <!-- <h2>(coffee lover n°<%= member.id %>)</h2> -->
+    <p><%= member.description %></p>
+    <div class="bg"></div>
+<%- include('../../partials/_footer.ejs') %>

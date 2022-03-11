@@ -4,6 +4,13 @@
 
 html {
     background-color: $first-color;
+    ::-webkit-scrollbar {
+        background-color: $first-color;
+        width: 10px;
+        &-thumb {
+            background-color: black;
+        }
+    }
 }
 
 #app {
@@ -78,15 +85,40 @@ nav {
     grid-template-columns: repeat(3, 1fr);
     gap: 50px;
     margin-top: 50px;
+    a {
+        &::before {
+            display: none;
+        }
+        // opacity: 0;
+        transform: translateY(150px);
+        transition: .4s;
+        &.active {
+            // opacity: 1;
+            transform: translateY(0);
+        }
+    }
     li {
         padding: 10px;
         border: solid black 3px;
         display: flex;
         flex-direction: column;
         gap: 20px;
-        background-color: rgba(0, 0, 0, 0.05);
+        background-color: rgba(255, 255, 255, 0.2);
+        cursor: pointer;
+        box-shadow: 0 0 0 black;
+        transition: .3s;
+        &:hover {
+            box-shadow: 10px 10px 0 black;
+            transform: translate(-10px,-10px);
+        }
         p {
+            max-width: 90%;
             opacity: 0.8;
+            // white-space: nowrap;
+            display: -webkit-box;
+                -webkit-line-clamp: 4;
+                -webkit-box-orient: vertical;
+            overflow: hidden;
         }
         .img--container {
             img {
@@ -100,3 +132,26 @@ nav {
         }
     }
 }
+
+.img--member {
+    width: auto;
+    // position: relative;
+    // left: 0;
+    // right: -50px;
+    margin-top: -50px;
+    margin-right: -50px;
+    max-height: 50vh;
+    > img {
+        display: block;
+        object-position: 0 35%;
+        // display: none;
+    }
+}
+
+// .bg {
+//     position:fixed ;
+//     inset: 0;
+//     background: white;
+//     opacity: 0.5;
+//     backdrop-filter: blur(5px);
+// }

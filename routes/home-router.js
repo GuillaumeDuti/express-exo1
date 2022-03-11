@@ -8,6 +8,7 @@ const upload = multer({ dest: 'storage' });
 
 
 homeRouter.get(['/', '/home'], homeController.index);
+homeRouter.get('/people/:id', homeController.people);
 homeRouter.get('/about', homeController.about);
 homeRouter.get('/contact', homeController.contact);
 homeRouter.post('/contact', upload.single('myFile'), homeController.contactFormSubmitted);

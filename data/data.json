@@ -1,17 +1,65 @@
 [
     {
+        "id": 1,
         "lastname": "x",
         "firstname": "Pierre",
-        "image": "images/pierre.jpg"
+        "description": "Même si on se ment, premièrement, le cycle du cosmos dans la vie... c'est une grande roue et cela même si les gens ne le savent pas ! Tu vas te dire : J'aurais jamais cru que le karaté guy pouvait parler comme ça !",
+        "image": "/images/pierre.jpg"
     },
     {
+        "id": 2,
         "lastname": "x",
         "firstname": "Gui",
-        "image": "images/gui.jpg"
+        "description": "Je ne voudrais pas rentrer dans des choses trop dimensionnelles, mais, je sais que, grâce à ma propre vérité là, j'ai un chien en ce moment à côté de moi et je le caresse, et parfois c'est bon parfois c'est pas bon. Il y a un an, je t'aurais parlé de mes muscles.",
+        "image": "/images/guillaume.jpg"
     },
     {
+        "id": 3,
         "lastname": "x",
-        "firstname": "momo",
-        "image": "images/momo.jpg"
+        "firstname": "Momo",
+        "description": "You see, là on voit qu'on a beaucoup à travailler sur nous-mêmes car c'est juste une question d'awareness et c'est une sensation réelle qui se produit si on veut ! Donc on n'est jamais seul spirituellement !",
+        "image": "/images/momo.jfif"
+    },
+    {
+        "id": 4,
+        "lastname": "x",
+        "firstname": "Ayan",
+        "description": "Dès lors, sachez que je me battrai pour faire admettre que la prise de conscience de nos dirigeants nous assure à toutes et à tous les moyens d'aller dans le sens d'un rappel des droits fondamentaux de notre pays",
+        "image": "/images/ayan.jpg"
+    },
+    {
+        "id": 5,
+        "lastname": "x",
+        "firstname": "Jerome",
+        "description": "Alors l'Éternel dit : Mon esprit ne restera pas à toujours dans l'homme, car l'homme n'est que chair, et ses jours seront de cent vingt ans.",
+        "image": "/images/jerome.jpg"
+    },
+    {
+        "id": 6,
+        "lastname": "x",
+        "firstname": "Olivier",
+        "description": "Dieu se souvint de Noé, de tous les animaux et de tout le bétail qui étaient avec lui dans l'arche ; et Dieu fit passer un vent sur la terre, et les eaux s'apaisèrent.",
+        "image": "/images/olivier.jfif"
+    },
+    {
+        "id": 7,
+        "lastname": "x",
+        "firstname": "Hani",
+        "description": "Chacun peut se prévaloir de tous les droits et de toutes les libertés proclamés dans la présente Déclaration, sans distinction aucune, notamment de race, de couleur, de sexe, de langue, de religion, d'opinion politique ou de toute autre opinion, d'origine nationale ou sociale, de fortune, de naissance ou de toute autre situation. De plus, il ne sera fait aucune distinction fondée sur le statut politique, juridique ou international du pays ou du territoire dont une personne est ressortissante, que ce pays ou territoire soit indépendant, sous tutelle, non autonome ou soumis à une limitation quelconque de souveraineté.",
+        "image": "/images/hani.jpg"
+    },
+    {
+        "id": 8,
+        "lastname": "x",
+        "firstname": "Kevin",
+        "description": "Oui alors écoute moi, je suis mon meilleur modèle car c'est juste une question d'awareness car l'aboutissement de l'instinct, c'est l'amour ! Et tu as envie de le dire au monde entier, including yourself.",
+        "image": "/images/kevin.jpg"
+    },
+    {
+        "id": 9,
+        "lastname": "x",
+        "firstname": "Benoît",
+        "description": "Oui alors écoute moi, je suis mon meilleur modèle car c'est juste une question d'awareness car l'aboutissement de l'instinct, c'est l'amour ! Et tu as envie de le dire au monde entier, including yourself.",
+        "image": "/images/benoit.jpg"
     }
 ]

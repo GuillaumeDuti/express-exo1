@@ -88,6 +88,7 @@ a {
 a::before {
   content: "";
   position: absolute;
+  width: 0;
   height: 5px;
   background-color: rgba(0, 0, 0, 0.8);
   bottom: 3px;
@@ -98,6 +99,9 @@ a::before {
 }
 
 a:hover::before {
+  -webkit-transition: right .3s;
+  transition: right .3s;
+  width: 100%;
   right: 0;
 }
 
@@ -144,6 +148,15 @@ button[type=submit] {
 
 html {
   background-color: #ffd82b;
+}
+
+html ::-webkit-scrollbar {
+  background-color: #ffd82b;
+  width: 10px;
+}
+
+html ::-webkit-scrollbar-thumb {
+  background-color: black;
 }
 
 #app {
@@ -261,6 +274,22 @@ nav ul {
   margin-top: 50px;
 }
 
+#home-list a {
+  -webkit-transform: translateY(150px);
+          transform: translateY(150px);
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+#home-list a::before {
+  display: none;
+}
+
+#home-list a.active {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
 #home-list li {
   padding: 10px;
   border: solid black 3px;
@@ -272,14 +301,44 @@ nav ul {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 20px;
-  background-color: rgba(0, 0, 0, 0.05);
+  background-color: rgba(255, 255, 255, 0.2);
+  cursor: pointer;
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+#home-list li:hover {
+  -webkit-box-shadow: 10px 10px 0 black;
+          box-shadow: 10px 10px 0 black;
+  -webkit-transform: translate(-10px, -10px);
+          transform: translate(-10px, -10px);
 }
 
 #home-list li p {
+  max-width: 90%;
   opacity: 0.8;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
 #home-list li .img--container img {
   aspect-ratio: 1/1;
+}
+
+.img--member {
+  width: auto;
+  margin-top: -50px;
+  margin-right: -50px;
+  max-height: 50vh;
+}
+
+.img--member > img {
+  display: block;
+  -o-object-position: 0 35%;
+     object-position: 0 35%;
 }
 /*# sourceMappingURL=style.css.map */
